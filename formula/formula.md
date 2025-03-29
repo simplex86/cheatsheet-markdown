@@ -112,17 +112,17 @@ $\left. \frac{du}{dx} \right| _{x=0}$
 
 |类型|左|右|示例|代码|说明|
 |:-:|:-:|:-:|:-:|:-:|:-:|
-|圆括号|(|)|$(2+3)*x$|\$(2+3)*x\$| |
-|方括号|[|]|$[2+3]*x$|\$[2+3]*x\$| |
-|大括号|\\{|\\}|$\{a*b\}$|\$\{a*b\}\$|`{ }`用于分组|
-|尖括号|\langle|\rangle|$\langle a*b \rangle$|\$\langle a*b \rangle\$|区分于小于号和大于号|
+|圆括号|(|)|$(2+3)*x$|&#36; (2+3)*x &#36;| |
+|方括号|[|]|$[2+3]*x$|&#36; [2+3]*x &#36;| |
+|大括号|\\{|\\}|$\{a*b\}$|&#36; \{a*b\} &#36;|`{ }`用于分组|
+|尖括号|\langle|\rangle|$\langle a*b \rangle$|&#36; \langle a*b \rangle &#36;|区分于小于号和大于号|
 
 ## 上下标
 
 |类型|符号|示例|代码|
 |:-:|:-:|:-:|:-:|
-|上标|^|$x^2$|\$x^2\$|
-|下标|_|$x_i$|\$x_i\$|
+|上标|^|$x^2$|&#36; x^2 &#36;|
+|下标|_|$x_i$|&#36; x_i &#36;|
 
 > 注：上下标符号作用对象为一个组
 
@@ -130,14 +130,14 @@ $\left. \frac{du}{dx} \right| _{x=0}$
 
 |运算符|符号|示例|代码|
 |:-:|:-:|:-:|:-:|
-|小于|\lt|$a \lt b$|\$a \lt b\$|
-|大于|\gt|$a \gt b$|\$a \gt b\$|
-|小于等于|\le|$a \le b$|\$a \le b\$|
-|大于等于|\ge|$a \ge b$|\$a \ge b\$|
-|等于|=|$a = b$|\$a = b\$|
-|不等于|\ne|$a \ne b$|\$a \ne b\$|
-|约等于|\approx|$a \approx b$|\$a \approx b\$|
-|恒等于|\equiv|$a \equiv b$|\$a \equiv b\$|
+|小于|\lt|$a \lt b$|&#36; a \lt b &#36;|
+|大于|\gt|$a \gt b$|&#36; a \gt b &#36;|
+|小于等于|\le|$a \le b$|&#36; a \le b &#36;|
+|大于等于|\ge|$a \ge b$|&#36; a \ge b &#36;|
+|等于|=|$a = b$|&#36; a = b &#36;|
+|不等于|\ne|$a \ne b$|&#36; a \ne b &#36;|
+|约等于|\approx|$a \approx b$|&#36; a \approx b &#36;|
+|恒等于|\equiv|$a \equiv b$|&#36; a \equiv b &#36;|
 
 > 注：以上符号前都可以加`\not`，例如 `$\not =$`表示$\not =$
 
@@ -147,54 +147,54 @@ $\left. \frac{du}{dx} \right| _{x=0}$
 
 |运算符|符号|示例|代码|
 |:-:|:-:|:-:|:-:|
-|加|+|$a+b$|\$a+b\$|
-|减|-|$a-b$|\$a-b\$|
-|乘|\times|$a \times b$|\$a \times b\$|
-|点乘|· 或 \cdot|$a \cdot b$|\$a \cdot b\$|
-|星乘|· 或 \ast|$a \ast b$|\$a \ast b\$|
-|除|\div|$a \div b$|\$a \div b\$|
-|斜除|/|$a / b$|\$a / b\$|
-|加减|\pm|$a \pm b$|\$a \pm b\$|
-|减加|\mp|$a \mp b$|\$a \mp b\$|
-|绝对值|\lvert 和 \rvert|$\lvert x \rvert$|\$\lvert x \rvert\$|
-|分数|\frac|$\frac {a}{b}$|\$\frac {a}{b}\$|
-|分数|\over|${a} \over {b}$|\${a} \over {b}\$|
-|模|\pmod|${a} \pmod {b}$|\${a} \pmod {b}\$|
+|加|+|$a+b$|&#36; a+b &#36;|
+|减|-|$a-b$|&#36; a-b &#36;|
+|乘|\times|$a \times b$|&#36; a \times b &#36;|
+|点乘|· 或 \cdot|$a \cdot b$|&#36; a \cdot b &#36;|
+|星乘|· 或 \ast|$a \ast b$|&#36; a \ast b &#36;|
+|除|\div|$a \div b$|&#36; a \div b &#36;|
+|斜除|/|$a / b$|&#36; a / b &#36;|
+|加减|\pm|$a \pm b$|&#36; a \pm b &#36;|
+|减加|\mp|$a \mp b$|&#36; a \mp b &#36;|
+|绝对值|\lvert 和 \rvert|$\lvert x \rvert$|&#36; \lvert x \rvert &#36;|
+|分数|\frac|$\frac {a}{b}$|&#36; \frac {a}{b} &#36;|
+|分数|\over|${a} \over {b}$|&#36; {a} \over {b} &#36;|
+|模|\pmod|${a} \pmod {b}$|&#36; {a} \pmod {b} &#36;|
 
 ### 高级运算
 
 |运算符|符号|示例|代码|说明|
 |:-:|:-:|:-:|:-:|:-:|
-|平均数|\overline|$\overline{abc}$|\$\overline{abc}\$|
-|开方|\sqrt|$\sqrt {a+b}$|\$\sqrt {a+b}\$|
-|开n次方|\sqrt[n]{m}|$\sqrt[3] {a+b}$|\$\sqrt[3] {a+b}\$|
-|对数|\log|$\log(x)$|\$\log(x)\$|
-|对数|\ln|$\ln(x)$|\$\ln(x)\$|以e为底|
-|对数|\lg|$\lg(x)$|\$\lg(x)\$|以10为底|
-|极限|\lim|$\lim^{x \to \infty}_{y \to 0}{\frac{x}{y}}$|\$\lim^{x \to \infty}_{y \to 0}{\frac{x}{y}}\$|
-|极限|\displaystyle \lim|$\displaystyle \lim^{x \to \infty}_{y \to 0}{\frac{x}{y}}$|\$\displaystyle \lim^{x \to \infty}_{y \to 0}{\frac{x}{y}}\$|
-|求和|\sum|$\sum_{i=1}^n$|\$\sum_{i=1}^n\$|
-|求和|\displaystyle \sum|$\displaystyle \sum_{i=1}^n$|\$\displaystyle \sum_{i=1}^n\$|
-|累乘|\prod|$\prod_{i=1}^{n}$|\$\prod_{i=1}^{n}\$|
-|余积|\coprod|$\coprod_{i=1}^{n}$|\$\coprod_{i=1}^{n}\$|
-|最大|\max|$\sum_{i=1}^n$|\$\sum_{i=1}^n\$|
-|最小|\min|$\sum_{i=1}^n$|\$\sum_{i=1}^n\$|
-|上取整|\lceil 和 \rceil|$\lceil x \rceil$|\$\lceil x \rceil\$|
-|下取整|\lfloor 和 \rfloor|$\lfloor x \rfloor$|\$\lfloor x \rfloor\$|
+|平均数|\overline|$\overline{abc}$|&#36; \overline{abc} &#36;|
+|开方|\sqrt|$\sqrt {a+b}$|&#36; \sqrt {a+b} &#36;|
+|开n次方|\sqrt[n]{m}|$\sqrt[3] {a+b}$|&#36; \sqrt[3] {a+b} &#36;|
+|对数|\log|$\log(x)$|&#36; \log(x) &#36;|
+|对数|\ln|$\ln(x)$|&#36; \ln(x) &#36;|以e为底|
+|对数|\lg|$\lg(x)$|&#36; \lg(x) &#36;|以10为底|
+|极限|\lim|$\lim^{x \to \infty}_{y \to 0}{\frac{x}{y}}$|&#36; \lim^{x \to \infty}_{y \to 0}{\frac{x}{y}} &#36;|
+|极限|\displaystyle \lim|$\displaystyle \lim^{x \to \infty}_{y \to 0}{\frac{x}{y}}$|&#36; \displaystyle \lim^{x \to \infty}_{y \to 0}{\frac{x}{y}} &#36;|
+|求和|\sum|$\sum_{i=1}^n$|&#36; \sum_{i=1}^n &#36;|
+|求和|\displaystyle \sum|$\displaystyle \sum_{i=1}^n$|&#36; \displaystyle \sum_{i=1}^n &#36;|
+|累乘|\prod|$\prod_{i=1}^{n}$|&#36; \prod_{i=1}^{n} &#36;|
+|余积|\coprod|$\coprod_{i=1}^{n}$|&#36; \coprod_{i=1}^{n} &#36;|
+|最大|\max|$\sum_{i=1}^n$|&#36; \sum_{i=1}^n &#36;|
+|最小|\min|$\sum_{i=1}^n$|&#36; \sum_{i=1}^n &#36;|
+|上取整|\lceil 和 \rceil|$\lceil x \rceil$|&#36; \lceil x \rceil &#36;|
+|下取整|\lfloor 和 \rfloor|$\lfloor x \rfloor$|&#36; \lfloor x \rfloor &#36;|
 
 ### 三角函数
 
 |运算符|符号|示例|代码|
 |:-:|:-:|:-:|:-:|
-|度|\circ|$45^\circ$|\$45^\circ\$|
-|夹角|\angle|$\angle ACB$|\$\angle ACB\$|
-|垂直|\bot|$L1 \bot L2$|\$L1 \bot L2\$|
-|sin|\sin|$\sin(45^\circ)={{\sqrt 2} \over 2}$|\$\sin(45^\circ)={{\sqrt 2} \over 2}\$|
-|cos|\cos|$\cos(45^\circ)={{\sqrt 2} \over 2}$|\$\cos(45^\circ)={{\sqrt 2} \over 2}\$|
-|tan|\tan|$\tan(45^\circ)={1 \over 2}$|\$\tan(45^\circ)={1 \over 2}\$|
-|cot|\cot|$\cot(45^\circ)={1 \over 2}$|\$\cot(45^\circ)={1 \over 2}\$|
-|sec|\sec|$\sec(45^\circ)={1 \over 2}$|\$\sec(45^\circ)={1 \over 2}\$|
-|csc|\csc|$\csc(45^\circ)={1 \over 2}$|\$\csc(45^\circ)={1 \over 2}\$|
+|度|\circ|$45^\circ$|&#36; 45^\circ &#36;|
+|夹角|\angle|$\angle ACB$|&#36; \angle ACB &#36;|
+|垂直|\bot|$L1 \bot L2$|&#36; L1 \bot L2 &#36;|
+|sin|\sin|$\sin(45^\circ)={{\sqrt 2} \over 2}$|&#36; \sin(45^\circ)={{\sqrt 2} \over 2} &#36;|
+|cos|\cos|$\cos(45^\circ)={{\sqrt 2} \over 2}$|&#36; \cos(45^\circ)={{\sqrt 2} \over 2} &#36;|
+|tan|\tan|$\tan(45^\circ)={1 \over 2}$|&#36; \tan(45^\circ)={1 \over 2} &#36;|
+|cot|\cot|$\cot(45^\circ)={1 \over 2}$|&#36; \cot(45^\circ)={1 \over 2} &#36;|
+|sec|\sec|$\sec(45^\circ)={1 \over 2}$|&#36; \sec(45^\circ)={1 \over 2} &#36;|
+|csc|\csc|$\csc(45^\circ)={1 \over 2}$|&#36; \csc(45^\circ)={1 \over 2} &#36;|
 
 ### 无穷大
 
@@ -210,16 +210,16 @@ $\left. \frac{du}{dx} \right| _{x=0}$
 
     |运算符|符号|示例|代码|
     |:-:|:-:|:-:|:-:|
-    |微分|\partial|$\frac{\partial x}{\partial y}$|\$\frac{\partial x}{\partial y}\$|
+    |微分|\partial|$\frac{\partial x}{\partial y}$|&#36; \frac{\partial x}{\partial y} &#36;|
 
 - 积分
 
     |运算符|符号|示例|代码|
     |:-:|:-:|:-:|:-:|
-    |积分|\int|$\int_{r=1}^\infty$|\$\int_{r=1}^\infty\$|
-    |积分|\displaystyle \int|$\displaystyle \int_{r=1}^\infty$|\$\displaystyle \int_{r=1}^\infty\$|
-    |双重积分|\iint|$\iint$|\$\iint\$|
-    |三重积分|\iiint|$\iiint$|\$\iiint\$|
+    |积分|\int|$\int_{r=1}^\infty$|&#36; \int_{r=1}^\infty &#36;|
+    |积分|\displaystyle \int|$\displaystyle \int_{r=1}^\infty$|&#36; \displaystyle \int_{r=1}^\infty &#36;|
+    |双重积分|\iint|$\iint$|&#36; \iint &#36;|
+    |三重积分|\iiint|$\iiint$|&#36; \iiint &#36;|
 
 ## 方程组 TODO
 
@@ -229,24 +229,24 @@ $\left. \frac{du}{dx} \right| _{x=0}$
 
 |运算符|符号|示例|代码|说明|
 |:-:|:-:|:-:|:-:|:-:|
-|向量|\vec|$\vec{a}$|\$\vec{a}\$||
-|向量|\mathbf|$\mathbf{a}$|\$\mathbf{a}\$|粗体|
+|向量|\vec|$\vec{a}$|&#36; \vec{a} &#36;||
+|向量|\mathbf|$\mathbf{a}$|&#36; \mathbf{a} &#36;|粗体|
 
 ### 矩阵 TODO
 
 |运算符|符号|示例|代码|
 |:-:|:-:|:-:|:-:|
-|积分|\int|$\int_{r=1}^\infty$|\$\int_{r=1}^\infty\$|
+|积分|\int|$\int_{r=1}^\infty$|&#36; \int_{r=1}^\infty &#36;|
 
 ## 集合 TODO
 
 |运算符|符号|示例|代码|
 |:-:|:-:|:-:|:-:|
-|属于|\in|$x \in y$|\$x \in y\$|
-|不属于|\notin|$x \notin y$|\$x \notin y\$|
-|交集|\cap|$A \cap B$|\$A \cap B\$|
-|并集|\cup|$A \cup B$|\$A \cup B\$|
-|差集|\setminus|$A \setminus B$|\$A \setminus B\$|
+|属于|\in|$x \in y$|&#36; x \in y &#36;|
+|不属于|\notin|$x \notin y$|&#36; x \notin y &#36;|
+|交集|\cap|$A \cap B$|&#36; A \cap B &#36;|
+|并集|\cup|$A \cup B$|&#36; A \cup B &#36;|
+|差集|\setminus|$A \setminus B$|&#36; A \setminus B &#36;|
 
 > 注：差集也可以直接用`-`号，即 `$A-B$`也表示差集 $A-B$
 
@@ -254,9 +254,9 @@ $\left. \frac{du}{dx} \right| _{x=0}$
 
 |运算符|符号|示例|代码|
 |:-:|:-:|:-:|:-:|
-|排列|\binom {上位公式}{下位公式}|$\binom {n+1}{2k}$|\$\binom {n+1}{2k}\$|
-|排列|{上位公式 \choose 下位公式}|${{n+1} \choose {2k}}$|\${{n+1} \choose {2k}}\$|
-|组合|{上位公式 \atop 下位公式}|$\sum_{k_0,k_1,\ldots>0 \atop k_0+k_1+\cdots=n}A_{k_0}A_{k_1}\cdots$|\$\sum_{k_0,k_1,\ldots>0 \atop k_0+k_1+\cdots=n}A_{k_0}A_{k_1}\cdots\$|
+|排列|\binom {上位公式}{下位公式}|$\binom {n+1}{2k}$|&#36; \binom {n+1}{2k} &#36;|
+|排列|{上位公式 \choose 下位公式}|${{n+1} \choose {2k}}$|&#36; {{n+1} \choose {2k}} &#36;|
+|组合|{上位公式 \atop 下位公式}|$\sum_{k_0,k_1,\ldots>0 \atop k_0+k_1+\cdots=n}A_{k_0}A_{k_1}\cdots$|&#36; \sum_{k_0,k_1,\ldots>0 \atop k_0+k_1+\cdots=n}A_{k_0}A_{k_1}\cdots &#36;|
 
 ## 几何 TODO
 
@@ -269,11 +269,11 @@ $\left. \frac{du}{dx} \right| _{x=0}$
 
 |运算符|符号|示例|代码|说明|
 |:-:|:-:|:-:|:-:|:-:|
-|省略号|\dots|$\dots$|\$\dots\$|一般用于有下标的序列|
-|省略号|\ldots|$\ldots$|\$\dots\$|
-|省略号|\cdots|$\cdots$|\$\cdots\$|纵向位置比 \dots 稍高|
-|省略号|\vdots|$\vdots$|\$\vdots\$|
-|省略号|\ddots|$\ddots$|\$\ddots\$|
+|省略号|\dots|$\dots$|&#36; \dots &#36;|一般用于有下标的序列|
+|省略号|\ldots|$\ldots$|&#36; \dots &#36;|
+|省略号|\cdots|$\cdots$|&#36; \cdots &#36;|纵向位置比 \dots 稍高|
+|省略号|\vdots|$\vdots$|&#36; \vdots &#36;|
+|省略号|\ddots|$\ddots$|&#36; \ddots &#36;|
 
 ### 颜色
 
@@ -293,14 +293,14 @@ $\left. \frac{du}{dx} \right| _{x=0}$
 
     |符号|示例|代码|
     |:-:|:-:|:-:|
-    |Red|${\color{Red}Red}$|\${\color{Red}Red}\$|
-    |Green|${\color{Green}Green}$|\${\color{Green}Green}\$|
-    |Blue|${\color{Blue}Blue}$|\${\color{Blue}Blue}\$|
-    |Yellow|${\color{Yellow}Yellow}$|\${\color{Yellow}Yellow}\$|
-    |Orange|${\color{Orange}Orange}$|\${\color{Orange}Orange}\$|
-    |Cyan|${\color{Cyan}Cyan}$|\${\color{Cyan}Cyan}\$|
-    |Tan|${\color{Tan}Tan}$|\${\color{Tan}Tan}\$|
-    |LimeGreen|${\color{LimeGreen}LimeGreen}$|\${\color{LimeGreen}LimeGreen}\$|
-    |SpringGreen|${\color{SpringGreen}SpringGreen}$|\${\color{SpringGreen}SpringGreen}\$|
-    |CornflowerBlue|${\color{CornflowerBlue}CornflowerBlue}$|\${\color{CornflowerBlue}CornflowerBlue}\$|
-    |GreenYellow|${\color{GreenYellow}GreenYellow}$|\${\color{GreenYellow}GreenYellow}\$|
+    |Red|${\color{Red}Red}$|&#36; {\color{Red}Red} &#36;|
+    |Green|${\color{Green}Green}$|&#36; {\color{Green}Green} &#36;|
+    |Blue|${\color{Blue}Blue}$|&#36; {\color{Blue}Blue} &#36;|
+    |Yellow|${\color{Yellow}Yellow}$|&#36; {\color{Yellow}Yellow} &#36;|
+    |Orange|${\color{Orange}Orange}$|&#36; {\color{Orange}Orange} &#36;|
+    |Cyan|${\color{Cyan}Cyan}$|&#36; {\color{Cyan}Cyan} &#36;|
+    |Tan|${\color{Tan}Tan}$|&#36; {\color{Tan}Tan} &#36;|
+    |LimeGreen|${\color{LimeGreen}LimeGreen}$|&#36; {\color{LimeGreen}LimeGreen} &#36;|
+    |SpringGreen|${\color{SpringGreen}SpringGreen}$|&#36; {\color{SpringGreen}SpringGreen} &#36;|
+    |CornflowerBlue|${\color{CornflowerBlue}CornflowerBlue}$|&#36; {\color{CornflowerBlue}CornflowerBlue} &#36;|
+    |GreenYellow|${\color{GreenYellow}GreenYellow}$|&#36; {\color{GreenYellow}GreenYellow} &#36;|
