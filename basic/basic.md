@@ -132,29 +132,23 @@ markdown 本身不支持`文本底色`的语法，但`在支持HTML的环境中`
 
 markdown 本身不支持`文本对齐方式`的语法，但`在支持HTML的环境中`可以使用`HTML标签`来实现
 
-- 左对齐
+<div style="text-align:left">左对齐文本</div>
 
-    <div style="text-align:left">左对齐文本</div>
+``` html
+<div style="text-align:left">左对齐文本</div>
+```
 
-    ``` html
-    <div style="text-align:left">左对齐文本</div>
-    ```
+<div style="text-align:center">居中对齐文本</div>
 
-- 居中对齐
+``` html
+<div style="text-align:center">居中对齐文本</div>
+```
 
-    <div style="text-align:center">居中对齐文本</div>
+<div style="text-align:right">右对齐文本</div>
 
-    ``` html
-    <div style="text-align:center">居中对齐文本</div>
-    ```
-
-- 右对齐
-
-    <div style="text-align:right">右对齐文本</div>
-
-    ``` html
-    <div style="text-align:right">右对齐文本</div>
-    ```
+``` html
+<div style="text-align:right">右对齐文本</div>
+```
 
 ## 字体
 
@@ -494,9 +488,6 @@ markdown 本身不支持`对齐方式`的语法，但`在支持HTML的环境中`
     <div align="left"> <img src="./imgs/image_01.jpeg" width=20% height=20% /> </div>
     ```
 
-> [!NOTE]
-> 左对齐是 markdown 默认的对齐方式
-
 - 居中对齐
 
     <div align="center"> <img src="./imgs/image_01.jpeg" width=20% height=20% /> </div>
@@ -512,3 +503,6 @@ markdown 本身不支持`对齐方式`的语法，但`在支持HTML的环境中`
     ``` html
     <div align="right"> <img src="./imgs/image_01.jpeg" width=20% height=20% /> </div>
     ```
+
+> [!NOTE]
+> 左对齐是 markdown 默认的图片对齐方式
