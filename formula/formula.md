@@ -62,17 +62,21 @@ $$
 
 在符号前加`\left`或`\right`，使符号大小与邻近的公式相适应
 
-自适应前：$(\sqrt{1 \over 2})^2$
+- 自适应前
 
-```
-$(\sqrt{1 \over 2})^2$
-```
+    $(\sqrt{1 \over 2})^2$
 
-自适应后：$\left(\sqrt{1 \over 2}\right)^2$
+    ```
+    $(\sqrt{1 \over 2})^2$
+    ```
 
-```
-$\left(\sqrt{1 \over 2}\right)^2$
-```
+- 自适应后
+
+    $\left(\sqrt{1 \over 2}\right)^2$
+
+    ```
+    $\left(\sqrt{1 \over 2}\right)^2$
+    ```
 
 对于不显示的符号可以使用`.`代替
 
