@@ -393,10 +393,10 @@ markdown 本身不支持`文本对齐方式`的语法，但`在支持HTML的环�
 - 图片地址可以是`本地图片路径`也可以是`网络图片路径`
 - 本地图片支持`相对路径`和`绝对路径`两种方式
 
-![本地图片_相对路径](.\\imgs\\image_01.jpeg)
+![本地图片_相对路径](./imgs/image_01.jpeg)
 
 ``` markdown
-![本地图片_相对路径](.\\imgs\\image_01.jpeg)
+![本地图片_相对路径](./imgs/image_01.jpeg)
 ```
 
 > 注：不要漏掉开头的 `!` 号
@@ -407,18 +407,18 @@ markdown 本身不支持`图片尺寸`的语法，但`在支持HTML的环境中`
 
 - 绝对尺寸
 
-    <img src=".\\imgs\\image_01.jpeg" width=100 height=100 />
+    <img src="./imgs/image_01.jpeg" width=100 height=100 />
 
     ``` html
-    <img src=".\\imgs\\image_01.jpeg" width=150 height=150 />
+    <img src="./imgs/image_01.jpeg" width=150 height=150 />
     ```
 
 - 相对尺寸
 
-    <img src=".\\imgs\\image_01.jpeg" width=20% height=20% />
+    <img src="./imgs/image_01.jpeg" width=20% height=20% />
 
     ``` html
-    <img src=".\\imgs\\image_01.jpeg" width=20% height=20% />
+    <img src="./imgs/image_01.jpeg" width=20% height=20% />
     ```
 
 #### 图片对齐
@@ -427,26 +427,26 @@ markdown 本身不支持`对齐方式`的语法，但`在支持HTML的环境中`
 
 - 左对齐
 
-    <div align="left"> <img src=".\\imgs\\image_01.jpeg" width=20% height=20% /> </div>
+    <div align="left"> <img src="./imgs/image_01.jpeg" width=20% height=20% /> </div>
 
     ``` html
-    <div align="left"> <img src=".\\imgs\\image_01.jpeg" width=20% height=20% /> </div>
+    <div align="left"> <img src="./imgs/image_01.jpeg" width=20% height=20% /> </div>
     ```
 
     > 注：左对齐是 markdown 默认的对齐方式
 
 - 居中对齐
 
-    <div align="center"> <img src=".\\imgs\\image_01.jpeg" width=20% height=20% /> </div>
+    <div align="center"> <img src="./imgs/image_01.jpeg" width=20% height=20% /> </div>
 
     ``` html
-    <div align="center"> <img src=".\\imgs\\image_01.jpeg" width=20% height=20% /> </div>
+    <div align="center"> <img src="./imgs/image_01.jpeg" width=20% height=20% /> </div>
     ```
 
 - 右对齐
 
-    <div align="right"> <img src=".\\imgs\\image_01.jpeg" width=20% height=20% /> </div>
+    <div align="right"> <img src="./imgs/image_01.jpeg" width=20% height=20% /> </div>
 
     ``` html
-    <div align="right"> <img src=".\\imgs\\image_01.jpeg" width=20% height=20% /> </div>
+    <div align="right"> <img src="./imgs/image_01.jpeg" width=20% height=20% /> </div>
     ```
