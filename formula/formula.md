@@ -86,7 +86,8 @@ $\left. \frac{du}{dx} \right| _{x=0}$
 $\left. \frac{du}{dx} \right| _{x=0}$
 ```
 
-> 注：该语句适用于所有符号类型，但必须成对出现
+> [!NOTE]
+> 该语句适用于所有符号类型，但必须成对出现
 
 ## 希腊字母
 
@@ -106,7 +107,8 @@ $\left. \frac{du}{dx} \right| _{x=0}$
 |长空格|\quad|$x \quad y$|&#36; x \quad y &#36;||
 |两个长空格|\qquad|$x \qquad y$|&#36; x \qquad y &#36;||
 
-> 注：暂时不知道大中小空格有啥区别
+> [!NOTE]
+> 暂时不知道大中小空格有啥区别
 
 ## 括号
 
@@ -124,7 +126,8 @@ $\left. \frac{du}{dx} \right| _{x=0}$
 |上标|^|$x^2$|&#36; x^2 &#36;|
 |下标|_|$x_i$|&#36; x_i &#36;|
 
-> 注：上下标符号作用对象为一个组
+> [!NOTE]
+> 上下标符号作用对象为一个组
 
 ## 比较
 
@@ -139,7 +142,8 @@ $\left. \frac{du}{dx} \right| _{x=0}$
 |约等于|\approx|$a \approx b$|&#36; a \approx b &#36;|
 |恒等于|\equiv|$a \equiv b$|&#36; a \equiv b &#36;|
 
-> 注：以上符号前都可以加`\not`，例如 `$\not =$`表示$\not =$
+> [!NOTE]
+> 以上符号前都可以加`\not`，例如 `$\not =$`表示$\not =$
 
 ## 代数
 
@@ -248,7 +252,8 @@ $\left. \frac{du}{dx} \right| _{x=0}$
 |并集|\cup|$A \cup B$|&#36; A \cup B &#36;|
 |差集|\setminus|$A \setminus B$|&#36; A \setminus B &#36;|
 
-> 注：差集也可以直接用`-`号，即 `$A-B$`也表示差集 $A-B$
+> [!NOTE]
+> 差集也可以直接用`-`号，即 `$A-B$`也表示差集 $A-B$
 
 ## 排列组合
 
