@@ -349,7 +349,7 @@ $$
 |运算符|符号|示例|代码|说明|
 |:-:|:-:|:-:|:-:|:-:|
 |任取|\forall|$\forall$|&#36; \forall &#36;||
-|存在|\exist|$\exist$|&#36; \exist &#36;||
+|存在|\exists|$\exists$|&#36; \exists &#36;||
 |因为|\because|$\because$|&#36; \because &#36;||
 |所以|\therefore|$\therefore$|&#36; \therefore &#36;||
 
