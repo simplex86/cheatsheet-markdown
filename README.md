@@ -49,6 +49,8 @@
         - [分段函数](./formula/formula.md#分段函数)
         - [无穷大](./formula/formula.md#无穷大)
         - [微积分](./formula/formula.md#微积分)
+        - [等号对齐](./formula/formula.md#等号对齐)
+        - [其他符号](./formula/formula.md#其他符号)
     - [向量](./formula/formula.md#向量)
     - [矩阵](./formula/formula.md#矩阵)
         - [基础矩阵](./formula/formula.md#基础矩阵)
