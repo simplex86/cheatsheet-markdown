@@ -63,7 +63,6 @@
         - [符号](./formula/formula.md#符号)
         - [运算](./formula/formula.md#运算)
     - [排列组合](./formula/formula.md#排列组合)
-    - [几何](./formula/formula.md#几何)
     - [其他](./formula/formula.md#其他)
         - [省略号](./formula/formula.md#省略号)
         - [颜色](./formula/formula.md#颜色)
