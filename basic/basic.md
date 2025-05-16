@@ -113,6 +113,9 @@ markdown 本身不支持`文本颜色`的语法，但`在支持HTML的环境中`
 <font color=#ff0000>红色的文本</font>
 ```
 
+> [!WARNING]
+> github 不支持文本颜色
+
 #### 文本底色
 
 markdown 本身不支持`文本底色`的语法，但`在支持HTML的环境中`可以使用`HTML标签`来实现
@@ -126,6 +129,9 @@ markdown 本身不支持`文本底色`的语法，但`在支持HTML的环境中`
 ``` html
 <table><tr><td bgcolor=#00ff00>绿油油的文本底色</td></tr></table>
 ```
+
+> [!WARNING]
+> github 不支持文本底色
 
 #### 文本对齐
 
@@ -148,6 +154,9 @@ markdown 本身不支持`文本对齐方式`的语法，但`在支持HTML的环�
 ``` html
 <div style="text-align:right">右对齐文本</div>
 ```
+
+> [!WARNING]
+> github 不支持文本对齐
 
 ## 字体
 
@@ -292,6 +301,9 @@ markdown 本身不支持`文本对齐方式`的语法，但`在支持HTML的环�
 > [!NOTE]
 > 待办清单是可以嵌套的
 
+> [!WARNING]
+> 待办清单必须紧靠文档左侧，也就是说在（最外层清单的）` - ` 符号之前不能有任何空格
+
 ## 分隔线
 
 ``` markdown
@@ -323,7 +335,7 @@ markdown 本身不支持`文本对齐方式`的语法，但`在支持HTML的环�
 ```
 
 > [!WARNING]
-> 非 markdown 原生语法，不是所用markdown引擎都支持
+> 非 markdown 原生语法，不是所用 markdown 引擎都支持
 
 注意<u>划重点</u>，都是考点
 

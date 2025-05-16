@@ -3,6 +3,7 @@
 - [概述](#概述)
     - [行内公式](#行内公式)
     - [行间公式](#行间公式)
+    - [换行](#换行)
     - [组](#组)
     - [自适应大小](#自适应大小)
 - [希腊字母](#希腊字母)
@@ -14,12 +15,20 @@
     - [四则运算](#四则运算)
     - [高级运算](#高级运算)
     - [三角函数](#三角函数)
+    - [方程组](#方程组)
+    - [分段函数](#分段函数)
     - [无穷大](#无穷大)
     - [微积分](#微积分)
-- [向量与矩阵](#向量与矩阵)
-    - [向量](#向量)
-    - [矩阵](#矩阵)
+- [向量](#向量)
+- [矩阵](#矩阵)
+    - [基础矩阵](#基础矩阵)
+    - [省略元素](#省略元素)
+    - [增广矩阵](#增广矩阵)
+    - [行列式](#行列式)
+    - [矩阵范数](#矩阵范数) 
 - [集合](#集合)
+    - [符号](#符号)
+    - [运算](#运算)
 - [排列组合](#排列组合)
 - [几何](#几何)
 - [其他](#其他)
@@ -51,6 +60,22 @@ $$
 ``` 
 $$
 \Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,.
+$$
+```
+
+### 换行
+
+在行尾加上 `\\` ，例如
+
+$$
+2x + 3y = 7 \\
+5x - 2y = 2
+$$
+
+``` 
+$$
+2x + 3y = 7 \\
+5x - 2y = 2
 $$
 ```
 
@@ -86,14 +111,37 @@ $\left. \frac{du}{dx} \right| _{x=0}$
 $\left. \frac{du}{dx} \right| _{x=0}$
 ```
 
-> 注：该语句适用于所有符号类型，但必须成对出现
+> [!NOTE]
+> 该语句适用于所有符号类型，但必须成对出现
 
 ## 希腊字母
 
-|名称|大写|code|小写|code|
-|:-:|:-:|:-:|:-:|:-:|
-| alpha|A|A|α|\alpha|
-| beta|B|B|β|\beta|
+|    名称   |     大写    |    code  |    小写   |   code   |
+| :-------: | :--------: | :------: | :-------: | :------: |
+|  $alpha$  |    $A$     |    A     |  $alpha$  |  \alpha  |
+|  $beta$   |    $B$     |    B     |  $beta$   |  \beta   |
+|  $gamma$  |  $\Gamma$  |  \Gamma  |  $gamma$  |  \gamma  |
+|  $delta$  |  $\Delta$  |  \Delta  |  $delta$  |  \delta  |
+| $epsilon$ |    $E$     |    E     | $epsilon$ | \epsilon |
+|  $zeta$   |    $Z$     |    Z     |  $zeta$   |  \zeta   |
+|   $eta$   |    $H$     |    H     |   $eta$   |   \eta   |
+|  $theta$  |  $\Theta$  |  \Theta  |  $theta$  |  \theta  |
+|  $iota$   |    $I$     |    I     |  $iota$   |  \iota   |
+|  $kappa$  |    $K$     |    K     |  $kappa$  |  \kappa  |
+| $lambda$  | $\lambda$  | \lambda  | $lambda$  | \lambda  |
+|   $mu$    |    $M$     |    M     |   $mu$    |   \mu    |
+|   $nu$    |    $N$     |    N     |   $nu$    |   \nu    |
+|   $xi$    |   $\Xi$    |   \Xi    |   $xi$    |   \xi    |
+| $omicron$ |    $O$     |    O     | $omicron$ | \omicron |
+|   $pi$    |   $\Pi$    |   \Pi    |   $pi$    |   \pi    |
+|   $rho$   |    $P$     |    P     |   $rho$   |   \rho   |
+|  $sigma$  |  $\Sigma$  |  \Sigma  |  $sigma$  |  \sigma  |
+|   $tau$   |    $T$     |    T     |   $tau$   |   \tau   |
+| $upsilon$ | $\Upsilon$ | \Upsilon | $upsilon$ | \upsilon |
+|   $phi$   |   $\Phi$   |   \Phi   |   $phi$   |   \phi   |
+|   $chi$   |    $X$     |    X     |   $chi$   |   \chi   |
+|   $psi$   |   $\Psi$   |   \Psi   |   $psi$   |   \psi   |
+|  $omega$  |  $\Omega$  |  \Omega  |  $omega$  |  \omega  |
 
 ## 占位符
 
@@ -106,7 +154,8 @@ $\left. \frac{du}{dx} \right| _{x=0}$
 |长空格|\quad|$x \quad y$|&#36; x \quad y &#36;||
 |两个长空格|\qquad|$x \qquad y$|&#36; x \qquad y &#36;||
 
-> 注：暂时不知道大中小空格有啥区别
+> [!NOTE]
+> 暂时不知道大中小空格有啥区别
 
 ## 括号
 
@@ -124,7 +173,8 @@ $\left. \frac{du}{dx} \right| _{x=0}$
 |上标|^|$x^2$|&#36; x^2 &#36;|
 |下标|_|$x_i$|&#36; x_i &#36;|
 
-> 注：上下标符号作用对象为一个组
+> [!NOTE]
+> 上下标符号作用对象为一个**组**
 
 ## 比较
 
@@ -139,7 +189,8 @@ $\left. \frac{du}{dx} \right| _{x=0}$
 |约等于|\approx|$a \approx b$|&#36; a \approx b &#36;|
 |恒等于|\equiv|$a \equiv b$|&#36; a \equiv b &#36;|
 
-> 注：以上符号前都可以加`\not`，例如 `$\not =$`表示$\not =$
+> [!NOTE]
+> 以上符号前都可以加`\not`，例如 `$\not =$`表示$\not =$
 
 ## 代数
 
@@ -196,6 +247,46 @@ $\left. \frac{du}{dx} \right| _{x=0}$
 |sec|\sec|$\sec(45^\circ)={1 \over 2}$|&#36; \sec(45^\circ)={1 \over 2} &#36;|
 |csc|\csc|$\csc(45^\circ)={1 \over 2}$|&#36; \csc(45^\circ)={1 \over 2} &#36;|
 
+### 方程组
+
+包含在 `\begin{cases}` 和 `\end{cases}` 之间，例如
+
+$$
+\begin{cases}
+a_1x+b_1y+c_1z=d_1\\
+a_2x+b_2y+c_2z=d_2\\
+a_3x+b_3y+c_3z=d_3\\
+\end{cases}
+$$
+
+``` markdown
+$$
+\begin{cases}
+a_1x + b_1y + c_1z = d_1\\
+a_2x + b_2y + c_2z = d_2\\
+a_3x + b_3y + c_3z = d_3\\
+\end{cases}
+$$
+```
+
+### 分段函数
+
+$$
+P(x|Pa_x)=\begin{cases} 
+    1, & x=f(Pa_{x})	\\\\ 
+    0, & \text{other values}
+\end{cases} \tag{9}
+$$
+
+```
+$$
+P(x|Pa_x)=\begin{cases} 
+    1, & x=f(Pa_{x})	\\\\ 
+    0, & \text{other values}
+\end{cases} \tag{9}
+$$
+```
+
 ### 无穷大
 
 |运算符|符号|示例|
@@ -221,34 +312,211 @@ $\left. \frac{du}{dx} \right| _{x=0}$
     |双重积分|\iint|$\iint$|&#36; \iint &#36;|
     |三重积分|\iiint|$\iiint$|&#36; \iiint &#36;|
 
-## 方程组 TODO
-
-## 向量与矩阵
-
-### 向量
+## 向量
 
 |运算符|符号|示例|代码|说明|
 |:-:|:-:|:-:|:-:|:-:|
 |向量|\vec|$\vec{a}$|&#36; \vec{a} &#36;||
 |向量|\mathbf|$\mathbf{a}$|&#36; \mathbf{a} &#36;|粗体|
 
-### 矩阵 TODO
+## 矩阵
 
-|运算符|符号|示例|代码|
+包含在 `\begin{matrix}` 和 `\end{matrix}` 之间，每一行末尾标记 `\\`，行间元素之间用 `&` 分隔，例如
+
+### 常见形式
+
+$$
+\begin{matrix}
+0&1&1\\
+1&1&0\\
+1&0&1\\
+\end{matrix}
+$$
+
+``` markdown
+$$
+\begin{matrix}
+0&1&1\\
+1&1&0\\
+1&0&1\\
+\end{matrix}
+$$
+```
+
+$$
+\begin{pmatrix}
+0&1&1\\
+1&1&0\\
+1&0&1\\
+\end{pmatrix}
+$$
+
+``` markdown
+$$
+\begin{pmatrix}
+0&1&1\\
+1&1&0\\
+1&0&1\\
+\end{pmatrix}
+$$
+```
+
+$$
+\begin{bmatrix}
+0&1&1\\
+1&1&0\\
+1&0&1\\
+\end{bmatrix}
+$$
+
+``` markdown
+$$
+\begin{bmatrix}
+0&1&1\\
+1&1&0\\
+1&0&1\\
+\end{bmatrix}
+$$
+```
+
+$$
+\begin{Bmatrix}
+0&1&1\\
+1&1&0\\
+1&0&1\\
+\end{Bmatrix}
+$$
+
+``` markdown
+$$
+\begin{Bmatrix}
+0&1&1\\
+1&1&0\\
+1&0&1\\
+\end{Bmatrix}
+$$
+```
+    
+### 省略元素
+
+- 横省略号：\cdots
+- 竖省略号：\vdots
+- 斜省略号：\ddots
+
+$$
+\begin{bmatrix}
+{a_{11}}&{a_{12}}&{\cdots}&{a_{1n}}\\
+{a_{21}}&{a_{22}}&{\cdots}&{a_{2n}}\\
+{\vdots}&{\vdots}&{\ddots}&{\vdots}\\
+{a_{m1}}&{a_{m2}}&{\cdots}&{a_{mn}}\\
+\end{bmatrix}
+$$
+
+```
+$$
+\begin{bmatrix}
+{a_{11}}&{a_{12}}&{\cdots}&{a_{1n}}\\
+{a_{21}}&{a_{22}}&{\cdots}&{a_{2n}}\\
+{\vdots}&{\vdots}&{\ddots}&{\vdots}\\
+{a_{m1}}&{a_{m2}}&{\cdots}&{a_{mn}}\\
+\end{bmatrix}
+$$
+```
+
+### 增广矩阵
+
+增广矩阵并不是按照标准的矩阵语法来实现的
+
+$$ 
+\left[
+\begin{array} {cc|c}
+    1 & 2 & 3 \\
+    4 & 5 & 6
+\end{array}
+\right]
+$$
+
+```
+$$ 
+\left[
+\begin{array}{cc|c}
+    1 & 2 & 3 \\\\
+    4 & 5 & 6
+\end{array}
+$$
+```
+
+### 行列式
+
+$$
+\begin{vmatrix}
+0&1&1\\
+1&1&0\\
+1&0&1\\
+\end{vmatrix}
+$$
+
+``` markdown
+$$
+\begin{vmatrix}
+0&1&1\\
+1&1&0\\
+1&0&1\\
+\end{vmatrix}
+$$
+```
+### 矩阵范数
+
+$$
+\begin{Vmatrix}
+0&1&1\\
+1&1&0\\
+1&0&1\\
+\end{Vmatrix}
+$$
+
+``` markdown
+$$
+\begin{Vmatrix}
+0&1&1\\
+1&1&0\\
+1&0&1\\
+\end{Vmatrix}
+$$
+```
+
+## 集合
+
+### 符号
+
+|名称|code|示例|代码|
 |:-:|:-:|:-:|:-:|
-|积分|\int|$\int_{r=1}^\infty$|&#36; \int_{r=1}^\infty &#36;|
+|实数集| \mathbb{R} |$\mathbb{R}$|&#36; \mathbb{R} &#36;|
+|复数集| \mathbb{C} |$\mathbb{C}$|&#36; \mathbb{C} &#36;|
+|整数集| \mathbb{Z} |$\mathbb{Z}$|&#36; \mathbb{Z} &#36;|
+|自然数集| \mathbb{N} |$\mathbb{N}$|&#36; \mathbb{N} &#36;|
+|正整数集| \mathbb{W} |$\mathbb{W}$|&#36; \mathbb{W} &#36;|
+|质数集| \mathbb{P} |$\mathbb{P}$|&#36; \mathbb{P} &#36;|
+|有理数集| \mathbb{Q} |$\mathbb{Q}$|&#36; \mathbb{Q} &#36;|
+|无理数集| \mathbb{I} |$\mathbb{I}$|&#36; \mathbb{I} &#36;|
+|空集| \emptyset |$\emptyset$|&#36; \emptyset &#36;|
 
-## 集合 TODO
+### 运算
 
-|运算符|符号|示例|代码|
+|名称|code|示例|代码|
 |:-:|:-:|:-:|:-:|
 |属于|\in|$x \in y$|&#36; x \in y &#36;|
 |不属于|\notin|$x \notin y$|&#36; x \notin y &#36;|
+|包含于|\subset|$x \subset y$|&#36; x \subset y &#36;|
+|包含|\supset|$x \supset y$|&#36; x \supset y &#36;|
+|真包含于|\subseteq|$x \subseteq y$|&#36; x \subseteq y &#36;|
+|真包含|\supseteq|$x \supseteq y$|&#36; x \supseteq y &#36;|
 |交集|\cap|$A \cap B$|&#36; A \cap B &#36;|
 |并集|\cup|$A \cup B$|&#36; A \cup B &#36;|
 |差集|\setminus|$A \setminus B$|&#36; A \setminus B &#36;|
 
-> 注：差集也可以直接用`-`号，即 `$A-B$`也表示差集 $A-B$
+> [!NOTE]
+> 差集也可以直接用 `-` 号，即 `$A-B$` 也表示差集 $A-B$
 
 ## 排列组合
 
