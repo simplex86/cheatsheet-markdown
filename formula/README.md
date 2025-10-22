@@ -6,11 +6,21 @@
     - [换行](#换行)
     - [组](#组)
     - [自适应大小](#自适应大小)
+    - [字体](#字体)
+        - [文本字体](#文本字体)
+        - [数学字体](#数学字体)
+        - [其他字体](#其他字体)
+        - [非标准命令](#非标准命令)
+    - [颜色](#颜色)
+        - [字体颜色](#字体颜色)
+        - [背景颜色](#背景颜色)
+        - [色调表](#色调表)
 - [希腊字母](#希腊字母)
-- [占位符](#占位符)
+- [间距](#间距)
 - [括号](#括号)
 - [上下标](#上下标)
 - [比较](#比较)
+- [省略号](#省略号)
 - [代数](#代数)
     - [四则运算](#四则运算)
     - [高级运算](#高级运算)
@@ -33,9 +43,6 @@
     - [符号](#符号)
     - [运算](#运算)
 - [排列组合](#排列组合)
-- [其他](#其他)
-    - [省略号](#省略号)
-    - [颜色](#颜色)
 
 ## 概述
 
@@ -116,6 +123,93 @@ $\left. \frac{du}{dx} \right| _{x=0}$
 > [!NOTE]
 > 该语句适用于所有符号类型，但必须成对出现
 
+### 字体
+
+#### 文本字体
+
+||符号|示例|代码|说明|
+|:-:|:-:|:-:|:-:|---|
+||\textup|$\textup{Ab0}$|&#36; \textup{Ab0} &#36;||
+|文本字体|\textnormal|$\textnormal{Ab0}$|&#36; \textnormal{Ab0} &#36;|在​​数学模式中插入一段正常字体|
+|罗马字体|\textrm|$\textrm{Ab0}$|&#36; \textrm{Ab0} &#36;|正体|
+|粗体文本|\textbf|$\textbf{Ab0}$|&#36; \textbf{Ab0} &#36;||
+|斜体文本|\textit|$\textit{Ab0}$|&#36; \textit{Ab0} &#36;||
+|打字机字体|\texttt|$\texttt{Ab0}$|&#36; \texttt{Ab0} &#36;|等宽字体|
+|无衬线字体|\textsf|$\textsf{Ab0}$|&#36; \textsf{Ab0} &#36;||
+||\textmd|$\textmd{Ab0}$|&#36; \textmd{Ab0} &#36;||
+
+#### 数学字体
+
+||符号|示例|代码|说明|
+|:-:|:-:|:-:|:-:|---|
+|数学斜体|\mathnormal|$\mathnormal{Ab0}$|&#36; \mathnormal{Ab0} &#36;|默认字体|
+|罗马字体|\mathrm|$\mathrm{Ab0}$|&#36; \mathrm{Ab0} &#36;|正体|
+|粗体|\mathbf|$\mathbf{Ab0}$|&#36; \mathbf{Ab0} &#36;||
+|斜体|\mathit|$\mathit{Ab0}$|&#36; \mathit{Ab0} &#36;||
+|花体|\mathcal|$\mathcal{Ab0}$|&#36; \mathcal{Ab0} &#36;|书法字体|
+|黑板粗体|\mathbb|$\mathbb{Ab0}$|&#36; \mathbb{Ab0} &#36;|通常用于数集|
+|弗兰克体|\mathfrak|$\mathfrak{Ab0}$|&#36; \mathfrak{Ab0} &#36;|哥特字体|
+|打字机字体|\mathtt|$\mathtt{Ab0}$|&#36; \mathtt{Ab0} &#36;||
+|无衬线字体|\mathsf|$\mathsf{Ab0}$|&#36; \mathsf{Ab0} &#36;||
+|手写体|\mathscr|$\mathscr{Ab0}$|&#36; \mathscr{Ab0} &#36;|需要mathrsfs包|
+
+#### 其他字体
+
+||符号|示例|代码|说明|
+|:-:|:-:|:-:|:-:|---|
+|粗体符号|\boldsymbol|$\boldsymbol{Ab0}$|&#36; \boldsymbol{Ab0} &#36;|用于希腊字母等|
+|罗马字体|\rm|$\rm{Ab0}$|&#36; \rm{Ab0} &#36;|已弃用，用\mathrm代替|
+|粗体|\bf|$\bf{Ab0}$|&#36; \bf{Ab0} &#36;|已弃用，用\mathbf代替|
+|斜体|\it|$\it{Ab0}$|&#36; \it{Ab0} &#36;|已弃用，用\mathit代替|
+|打字机字体|\tt|$\tt{Ab0}$|&#36; \tt{Ab0} &#36;|已弃用，用\mathtt代替|
+|无衬线字体|\sf|$\sf{Ab0}$|&#36; \sf{Ab0} &#36;|已弃用，用\mathsf代替|
+
+#### 非标准命令
+
+||符号|示例|代码|说明|
+|:-:|:-:|:-:|:-:|---|
+|粗体|\bold|$\bold{Ab0}$|&#36; \bold{Ab0} &#36;|等价于 \mathbf|
+|花体|\cal|$\cal{Ab0}$|&#36; \cal{Ab0} &#36;|等价于 \mathcal|
+|​​粗体符号|\bm|$\bm{Ab0}$|&#36; \bm{Ab0} &#36;|等价于 \boldsymbol|
+|弗兰克体|\frak|$\frak{Ab0}$|&#36; \frak{Ab0} &#36;|等价于 \mathfrak|
+|黑板粗体|\Bbb|$\Bbb{Ab0}$|&#36; \Bbb{Ab0} &#36;|等价于 \mathbb|
+
+> [!IMPORTANT]  
+> 非标准命令，可能在某些系统中不被支持
+
+### 颜色
+
+#### 字体颜色
+
+||符号|示例|代码|说明|
+|:-:|:-:|:-:|:-:|---|
+|文本颜色|\color{色调}{表达式}|$\color{Red}{a \times b}$|&#36; \color{Red}{a \times b} &#36;||
+|文本颜色|\textcolor{色调}{表达式}|$\textcolor{Yellow}{a \div b}$|&#36; \textcolor{Yellow}{a \div b} &#36;||
+
+#### 背景颜色
+
+||符号|示例|代码|说明|
+|:-:|:-:|:-:|:-:|---|
+|背景颜色|\colorbox{色调}{表达式}|$\colorbox{Orange}{a + b}$|&#36; \colorbox{Orange}{a + b} &#36;||
+|背景颜色|\fcolorbox{色调}{aqua}{表达式}|$\fcolorbox{Orange}{aqua}{a - b}$|&#36; \colorbox{Orange}{aqua}{a - b} &#36;|反色|
+
+#### 色调表
+
+|符号|示例|代码|
+|:-:|:-:|:-:|
+|Red|${\color{Red}Red}$|&#36; {\color{Red}Red} &#36;|
+|Green|${\color{Green}Green}$|&#36; {\color{Green}Green} &#36;|
+|Blue|${\color{Blue}Blue}$|&#36; {\color{Blue}Blue} &#36;|
+|Yellow|${\color{Yellow}Yellow}$|&#36; {\color{Yellow}Yellow} &#36;|
+|Orange|${\color{Orange}Orange}$|&#36; {\color{Orange}Orange} &#36;|
+|Cyan|${\color{Cyan}Cyan}$|&#36; {\color{Cyan}Cyan} &#36;|
+|Tan|${\color{Tan}Tan}$|&#36; {\color{Tan}Tan} &#36;|
+|LimeGreen|${\color{LimeGreen}LimeGreen}$|&#36; {\color{LimeGreen}LimeGreen} &#36;|
+|SpringGreen|${\color{SpringGreen}SpringGreen}$|&#36; {\color{SpringGreen}SpringGreen} &#36;|
+|CornflowerBlue|${\color{CornflowerBlue}CornflowerBlue}$|&#36; {\color{CornflowerBlue}CornflowerBlue} &#36;|
+|GreenYellow|${\color{GreenYellow}GreenYellow}$|&#36; {\color{GreenYellow}GreenYellow} &#36;|
+|#自定义颜色|${\color{#3399ff}{\#自定义颜色}}$|&#36; {\color{#3399ff}{#自定义颜色}} &#36;|
+
 ## 希腊字母
 
 |    名称   |     大写    |    code  |    小写   |   code   |
@@ -145,19 +239,23 @@ $\left. \frac{du}{dx} \right| _{x=0}$
 |   $psi$   |   $\Psi$   |   \Psi   |   $psi$   |   \psi   |
 |  $omega$  |  $\Omega$  |  \Omega  |  $omega$  |  \omega  |
 
-## 占位符
+## 间距
 
 |类型|符号|示例|代码|说明|
 |:-:|:-:|:-:|:-:|:-:|
-|没空格||$xy$|&#36; xy &#36;| |
-|小空格|\\,|$x\,y$|&#36; x \\, y &#36;|间距 3/18 em|
-|中空格|\\:|$x\:y$|&#36; x \\: y &#36;|间距 4/18 em|
-|大空格|\\ |$x\ y$|&#36; x \\  y &#36;|间距 5/18 em|
-|长空格|\quad|$x \quad y$|&#36; x \quad y &#36;||
-|两个长空格|\qquad|$x \qquad y$|&#36; x \qquad y &#36;||
-
-> [!NOTE]
-> 暂时不知道大中小空格有啥区别
+|没间距||$xy$|&#36; xy &#36;| |
+|小间距|\\,|$x \, y$|&#36; x \\, y &#36;|间距 3/18 em|
+|小间距|\thinspace|$x \thinspace y$|&#36; x \thinspace y &#36;|间距 3/18 em|
+|中间距|\\:|$x \: y$|&#36; x \\: y &#36;|间距 4/18 em|
+|中间距|\medspace|$x \medspace y$|&#36; x \medspace y &#36;|间距 4/18 em|
+|大间距|\\;|$x \; y$|&#36; x \\;  y &#36;|间距 5/18 em|
+|大间距|\thickspace|$x \thickspace y$|&#36; x \thickspace  y &#36;|间距 5/18 em|
+|长间距|\quad|$x \quad y$|&#36; x \quad y &#36;|间距 1 em|
+|超长间距|\qquad|$x \qquad y$|&#36; x \qquad y &#36;|间距 2 em|
+|不换行间距|~|$x ~ y$|&#36; x ~ y &#36;||
+|小负间距|\negthinspace|$x \negthinspace y$|&#36; x \negthinspace y &#36;|间距 -3/18 em|
+|中负间距|\negmedspace|$x \negmedspace y$|&#36; x \negmedspace y &#36;|间距 -4/18 em|
+|大负间距|\negthickspace|$x \negthickspace y$|&#36; x \negthickspace  y &#36;|间距 -5/18 em|
 
 ## 括号
 
@@ -175,7 +273,7 @@ $\left. \frac{du}{dx} \right| _{x=0}$
 |上标|^|$x^2$|&#36; x^2 &#36;|
 |下标|_|$x_i$|&#36; x_i &#36;|
 
-> [!NOTE]
+> [!NOTE]  
 > 上下标符号作用对象为一个**组**
 
 ## 比较
@@ -191,8 +289,18 @@ $\left. \frac{du}{dx} \right| _{x=0}$
 |约等于|\approx|$a \approx b$|&#36; a \approx b &#36;|
 |恒等于|\equiv|$a \equiv b$|&#36; a \equiv b &#36;|
 
-> [!NOTE]
-> 以上符号前都可以加`\not`，例如 `$\not =$`表示$\not =$
+> [!NOTE]  
+> 以上符号前都可以加 `\not`，例如 `$\not =$` 表示 $\not =$
+
+## 省略号
+
+|运算符|符号|示例|代码|说明|
+|:-:|:-:|:-:|:-:|:-:|
+|省略号|\dots|$\dots$|&#36; \dots &#36;|一般用于有下标的序列|
+|省略号|\ldots|$\ldots$|&#36; \dots &#36;|
+|省略号|\cdots|$\cdots$|&#36; \cdots &#36;|纵向位置比 \dots 稍高|
+|省略号|\vdots|$\vdots$|&#36; \vdots &#36;|
+|省略号|\ddots|$\ddots$|&#36; \ddots &#36;|
 
 ## 代数
 
@@ -207,6 +315,7 @@ $\left. \frac{du}{dx} \right| _{x=0}$
 |星乘|· 或 \ast|$a \ast b$|&#36; a \ast b &#36;|
 |除|\div|$a \div b$|&#36; a \div b &#36;|
 |斜除|/|$a / b$|&#36; a / b &#36;|
+|整除|\mid|$a \mid b$|&#36; a \mid b &#36;|
 |加减|\pm|$a \pm b$|&#36; a \pm b &#36;|
 |减加|\mp|$a \mp b$|&#36; a \mp b &#36;|
 |绝对值|\lvert 和 \rvert|$\lvert x \rvert$|&#36; \lvert x \rvert &#36;|
@@ -230,8 +339,8 @@ $\left. \frac{du}{dx} \right| _{x=0}$
 |求和|\displaystyle \sum|$\displaystyle \sum_{i=1}^n$|&#36; \displaystyle \sum_{i=1}^n &#36;|
 |累乘|\prod|$\prod_{i=1}^{n}$|&#36; \prod_{i=1}^{n} &#36;|
 |余积|\coprod|$\coprod_{i=1}^{n}$|&#36; \coprod_{i=1}^{n} &#36;|
-|最大|\max|$\sum_{i=1}^n$|&#36; \sum_{i=1}^n &#36;|
-|最小|\min|$\sum_{i=1}^n$|&#36; \sum_{i=1}^n &#36;|
+|最大|\max|$\max(a, b)$|&#36; \max(a, b) &#36;|
+|最小|\min|$\min(a, b)$|&#36; \min(a, b) &#36;|
 |上取整|\lceil 和 \rceil|$\lceil x \rceil$|&#36; \lceil x \rceil &#36;|
 |下取整|\lfloor 和 \rfloor|$\lfloor x \rfloor$|&#36; \lfloor x \rfloor &#36;|
 
@@ -275,16 +384,16 @@ $$
 
 $$
 P(x|Pa_x)=\begin{cases} 
-    1, & x=f(Pa_{x})	\\\\ 
-    0, & \text{other values}
+1, & x=f(Pa_{x}) \\
+0, & \text{other values}
 \end{cases} \tag{9}
 $$
 
 ```
 $$
 P(x|Pa_x)=\begin{cases} 
-    1, & x=f(Pa_{x})	\\\\ 
-    0, & \text{other values}
+1, & x=f(Pa_{x}) \\
+0, & \text{other values}
 \end{cases} \tag{9}
 $$
 ```
@@ -597,45 +706,3 @@ $$
 |排列|\binom {上位公式}{下位公式}|$\binom {n+1}{2k}$|&#36; \binom {n+1}{2k} &#36;|
 |排列|{上位公式 \choose 下位公式}|${{n+1} \choose {2k}}$|&#36; {{n+1} \choose {2k}} &#36;|
 |组合|{上位公式 \atop 下位公式}|$\sum_{k_0,k_1,\ldots>0 \atop k_0+k_1+\cdots=n}A_{k_0}A_{k_1}\cdots$|&#36; \sum_{k_0,k_1,\ldots>0 \atop k_0+k_1+\cdots=n}A_{k_0}A_{k_1}\cdots &#36;|
-
-## 其他
-
-### 省略号
-
-|运算符|符号|示例|代码|说明|
-|:-:|:-:|:-:|:-:|:-:|
-|省略号|\dots|$\dots$|&#36; \dots &#36;|一般用于有下标的序列|
-|省略号|\ldots|$\ldots$|&#36; \dots &#36;|
-|省略号|\cdots|$\cdots$|&#36; \cdots &#36;|纵向位置比 \dots 稍高|
-|省略号|\vdots|$\vdots$|&#36; \vdots &#36;|
-|省略号|\ddots|$\ddots$|&#36; \ddots &#36;|
-
-### 颜色
-
-- 字体颜色
-
-    ``` markdown
-    ${\color{色调}表达式}$
-    ```
-
-- 背景颜色
-
-    ```
-    ${\pagecolor{色调}表达式}$
-    ```
-
-- 色调表
-
-    |符号|示例|代码|
-    |:-:|:-:|:-:|
-    |Red|${\color{Red}Red}$|&#36; {\color{Red}Red} &#36;|
-    |Green|${\color{Green}Green}$|&#36; {\color{Green}Green} &#36;|
-    |Blue|${\color{Blue}Blue}$|&#36; {\color{Blue}Blue} &#36;|
-    |Yellow|${\color{Yellow}Yellow}$|&#36; {\color{Yellow}Yellow} &#36;|
-    |Orange|${\color{Orange}Orange}$|&#36; {\color{Orange}Orange} &#36;|
-    |Cyan|${\color{Cyan}Cyan}$|&#36; {\color{Cyan}Cyan} &#36;|
-    |Tan|${\color{Tan}Tan}$|&#36; {\color{Tan}Tan} &#36;|
-    |LimeGreen|${\color{LimeGreen}LimeGreen}$|&#36; {\color{LimeGreen}LimeGreen} &#36;|
-    |SpringGreen|${\color{SpringGreen}SpringGreen}$|&#36; {\color{SpringGreen}SpringGreen} &#36;|
-    |CornflowerBlue|${\color{CornflowerBlue}CornflowerBlue}$|&#36; {\color{CornflowerBlue}CornflowerBlue} &#36;|
-    |GreenYellow|${\color{GreenYellow}GreenYellow}$|&#36; {\color{GreenYellow}GreenYellow} &#36;|
