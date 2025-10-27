@@ -21,6 +21,9 @@
 - [上下标](#上下标)
 - [比较](#比较)
 - [省略号](#省略号)
+- [箭头](#箭头)
+    - [定长箭头](#定长箭头)
+    - [延伸箭头](#延伸箭头)
 - [代数](#代数)
     - [四则运算](#四则运算)
     - [高级运算](#高级运算)
@@ -214,30 +217,30 @@ $\left. \frac{du}{dx} \right| _{x=0}$
 
 |    名称   |     大写    |    code  |    小写   |   code   |
 | :-------: | :--------: | :------: | :-------: | :------: |
-|  $alpha$  |    $A$     |    A     |  $alpha$  |  \alpha  |
-|  $beta$   |    $B$     |    B     |  $beta$   |  \beta   |
-|  $gamma$  |  $\Gamma$  |  \Gamma  |  $gamma$  |  \gamma  |
-|  $delta$  |  $\Delta$  |  \Delta  |  $delta$  |  \delta  |
-| $epsilon$ |    $E$     |    E     | $epsilon$ | \epsilon |
-|  $zeta$   |    $Z$     |    Z     |  $zeta$   |  \zeta   |
-|   $eta$   |    $H$     |    H     |   $eta$   |   \eta   |
-|  $theta$  |  $\Theta$  |  \Theta  |  $theta$  |  \theta  |
-|  $iota$   |    $I$     |    I     |  $iota$   |  \iota   |
-|  $kappa$  |    $K$     |    K     |  $kappa$  |  \kappa  |
-| $lambda$  | $\lambda$  | \lambda  | $lambda$  | \lambda  |
-|   $mu$    |    $M$     |    M     |   $mu$    |   \mu    |
-|   $nu$    |    $N$     |    N     |   $nu$    |   \nu    |
-|   $xi$    |   $\Xi$    |   \Xi    |   $xi$    |   \xi    |
-| $omicron$ |    $O$     |    O     | $omicron$ | \omicron |
-|   $pi$    |   $\Pi$    |   \Pi    |   $pi$    |   \pi    |
-|   $rho$   |    $P$     |    P     |   $rho$   |   \rho   |
-|  $sigma$  |  $\Sigma$  |  \Sigma  |  $sigma$  |  \sigma  |
-|   $tau$   |    $T$     |    T     |   $tau$   |   \tau   |
-| $upsilon$ | $\Upsilon$ | \Upsilon | $upsilon$ | \upsilon |
-|   $phi$   |   $\Phi$   |   \Phi   |   $phi$   |   \phi   |
-|   $chi$   |    $X$     |    X     |   $chi$   |   \chi   |
-|   $psi$   |   $\Psi$   |   \Psi   |   $psi$   |   \psi   |
-|  $omega$  |  $\Omega$  |  \Omega  |  $omega$  |  \omega  |
+|  $alpha$  |    $A$     |    A     |  $\alpha$  |  \alpha  |
+|  $beta$   |    $B$     |    B     |  $\beta$   |  \beta   |
+|  $gamma$  |  $\Gamma$  |  \Gamma  |  $\gamma$  |  \gamma  |
+|  $delta$  |  $\Delta$  |  \Delta  |  $\delta$  |  \delta  |
+| $epsilon$ |    $E$     |    E     | $\epsilon$ | \epsilon |
+|  $zeta$   |    $Z$     |    Z     |  $\zeta$   |  \zeta   |
+|   $eta$   |    $H$     |    H     |   $\eta$   |   \eta   |
+|  $theta$  |  $\Theta$  |  \Theta  |  $\theta$  |  \theta  |
+|  $iota$   |    $I$     |    I     |  $\iota$   |  \iota   |
+|  $kappa$  |    $K$     |    K     |  $\kappa$  |  \kappa  |
+| $lambda$  | $\lambda$  | \lambda  | $\lambda$  | \lambda  |
+|   $mu$    |    $M$     |    M     |   $\mu$    |   \mu    |
+|   $nu$    |    $N$     |    N     |   $\nu$    |   \nu    |
+|   $xi$    |   $\Xi$    |   \Xi    |   $\xi$    |   \xi    |
+| $omicron$ |    $O$     |    O     | $\omicron$ | \omicron |
+|   $pi$    |   $\Pi$    |   \Pi    |   $\pi$    |   \pi    |
+|   $rho$   |    $P$     |    P     |   $\rho$   |   \rho   |
+|  $sigma$  |  $\Sigma$  |  \Sigma  |  $\sigma$  |  \sigma  |
+|   $tau$   |    $T$     |    T     |   $\tau$   |   \tau   |
+| $upsilon$ | $\Upsilon$ | \Upsilon | $\upsilon$ | \upsilon |
+|   $phi$   |   $\Phi$   |   \Phi   |   $\phi$   |   \phi   |
+|   $chi$   |    $X$     |    X     |   $\chi$   |   \chi   |
+|   $psi$   |   $\Psi$   |   \Psi   |   $\psi$   |   \psi   |
+|  $omega$  |  $\Omega$  |  \Omega  |  $\omega$  |  \omega  |
 
 ## 间距
 
@@ -297,10 +300,64 @@ $\left. \frac{du}{dx} \right| _{x=0}$
 |运算符|符号|示例|代码|说明|
 |:-:|:-:|:-:|:-:|:-:|
 |省略号|\dots|$\dots$|&#36; \dots &#36;|一般用于有下标的序列|
-|省略号|\ldots|$\ldots$|&#36; \dots &#36;|
+|省略号|\ldots|$\ldots$|&#36; \ldots &#36;||
 |省略号|\cdots|$\cdots$|&#36; \cdots &#36;|纵向位置比 \dots 稍高|
-|省略号|\vdots|$\vdots$|&#36; \vdots &#36;|
-|省略号|\ddots|$\ddots$|&#36; \ddots &#36;|
+|省略号|\vdots|$\vdots$|&#36; \vdots &#36;||
+|省略号|\ddots|$\ddots$|&#36; \ddots &#36;||
+
+## 箭头
+
+### 定长箭头
+
+|运算符|符号|示例|代码|说明|
+|:-:|:-:|:-:|:-:|:-:|
+|上箭头|\uparrow|$\uparrow$|&#36; \uparrow &#36;||
+|上箭头|\Uparrow|$\Uparrow$|&#36; \Uparrow &#36;||
+|下箭头|\downarrow|$\downarrow$|&#36; \downarrow &#36;||
+|下箭头|\Downarrow|$\Downarrow$|&#36; \Downarrow &#36;||
+|上下箭头|\updownarrow|$\updownarrow$|&#36; \updownarrow &#36;||
+|上下箭头|\Updownarrow|$\Updownarrow$|&#36; \Updownarrow &#36;||
+|左箭头|\leftarrow|$\leftarrow$|&#36; \leftarrow &#36;||
+|左箭头|\Leftarrow|$\Leftarrow$|&#36; \Leftarrow &#36;||
+|左虚线箭头|\dashleftarrow|$\dashleftarrow$|&#36; \dashleftarrow &#36;||
+|右箭头|\rightarrow|$\rightarrow$|&#36; \rightarrow &#36;||
+|右箭头|\Rightarrow|$\Rightarrow$|&#36; \Rightarrow &#36;||
+|右虚线箭头|\dashrightarrow|$\dashrightarrow$|&#36; \dashrightarrow &#36;||
+|左右箭头|\leftrightarrow|$\leftrightarrow$|&#36; \leftrightarrow &#36;||
+|左右箭头|\Leftrightarrow|$\Leftrightarrow$|&#36; \Leftrightarrow &#36;||
+|左右长箭头|\longleftrightarrow|$\longleftrightarrow$|&#36; \longleftrightarrow &#36;||
+|左右长箭头|\Longleftrightarrow|$\Longleftrightarrow$|&#36; \Longleftrightarrow &#36;||
+|左右波浪箭头|\leftrightsquigarrow|$\leftrightsquigarrow$|&#36; \leftrightsquigarrow &#36;||
+|上左下右箭头|\leftrightharpoons|$\leftrightharpoons$|&#36; \leftrightharpoons &#36;||
+|上右下左箭头|\rightleftharpoons|$\rightleftharpoons$|&#36; \rightleftharpoons &#36;||
+|斜上右箭头|\nearrow|$\nearrow$|&#36; \nearrow &#36;||
+|斜上左箭头|\nwarrow|$\nwarrow$|&#36; \nwarrow &#36;||
+|斜右下箭头|\searrow|$\searrow$|&#36; \searrow &#36;||
+|斜左下箭头|\swarrow|$\swarrow$|&#36; \swarrow &#36;||
+|左弯曲箭头|\curvearrowleft|$\curvearrowleft$|&#36; \curvearrowleft &#36;||
+|右弯曲箭头|\curvearrowright|$\curvearrowright$|&#36; \curvearrowright &#36;||
+|左循环箭头|\circlearrowleft|$\circlearrowleft$|&#36; \circlearrowleft &#36;||
+|右循环箭头|\circlearrowright|$\circlearrowright$|&#36; \circlearrowright &#36;||
+
+### 延伸箭头
+
+|运算符|符号|示例|代码|说明|
+|:-:|:-:|:-:|:-:|:-:|
+|左延伸箭头|\xleftarrow|$\xleftarrow{abc}$|&#36; \xleftarrow{abc} &#36;||
+|左双延伸箭头|\xLeftarrow|$\xLeftarrow{abc}$|&#36; \xLeftarrow{abc} &#36;||
+|右延伸箭头|\xrightarrow|$\xrightarrow{abc}$|&#36; \xrightarrow{abc} &#36;||
+|右双延伸箭头|\xRightarrow|$\xRightarrow{abc}$|&#36; \xRightarrow{abc} &#36;||
+|左右延伸箭头|\xleftrightarrow|$\xleftrightarrow{abc}$|&#36; \xleftrightarrow{abc} &#36;||
+|左右双延伸箭头|\xLeftrightarrow|$\xLeftrightarrow{abc}$|&#36; \xLeftrightarrow{abc} &#36;||
+|左上延伸箭头|\xleftharpoonup|$\xleftharpoonup{abc}$|&#36; \xleftharpoonup{abc} &#36;||
+|左下延伸箭头|\xleftharpoondown|$\xleftharpoondown{abc}$|&#36; \xleftharpoondown{abc} &#36;||
+|右上延伸箭头|\xrightharpoonup|$\xrightharpoonup{abc}$|&#36; \xrightharpoonup{abc} &#36;||
+|右下延伸箭头|\xrightharpoondown|$\xrightharpoondown{abc}$|&#36; \xrightharpoondown{abc} &#36;||
+|左右双向延伸箭头|\xtofrom|$\xtofrom{abc}$|&#36; \xtofrom{abc} &#36;||
+|上左下右延伸箭头|\xleftrightharpoons|$\xleftrightharpoons{abc}$|&#36; \xleftrightharpoons{abc} &#36;||
+|下左上右延伸箭头|\xrightleftharpoons|$\xrightleftharpoons{abc}$|&#36; \xrightleftharpoons{abc} &#36;||
+|左映射延伸箭头|\xmapsto|$\xmapsto{abc}$|&#36; \xmapsto{abc} &#36;||
+|左右等长延伸箭头|\xlongequal|$\xlongequal{abc}$|&#36; \xlongequal{abc} &#36;||
 
 ## 代数
 
@@ -405,6 +462,13 @@ $$
 |无穷大|\infty|$\infty$|
 |正无穷|+\infty|$+\infty$|
 |负无穷|-\infty|$-\infty$|
+
+### 导数
+
+|运算符|符号|示例|代码|
+|:-:|:-:|:-:|:-:|
+|一阶导数|\dot{a}|$\dot{a}$|&#36; \dot{a} &#36;|
+|二阶导数|\ddot{a}|$\ddot{a}$|&#36; \ddot{a} &#36;|
 
 ### 微积分
 
