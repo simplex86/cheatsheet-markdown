@@ -213,6 +213,9 @@ $\left. \frac{du}{dx} \right| _{x=0}$
 |GreenYellow|${\color{GreenYellow}GreenYellow}$|&#36; {\color{GreenYellow}GreenYellow} &#36;|
 |#自定义颜色|${\color{#3399ff}{\#自定义颜色}}$|&#36; {\color{#3399ff}{#自定义颜色}} &#36;|
 
+> [!WARNING]  
+> Github 不支持背景色和自定义颜色
+
 ## 希腊字母
 
 |    名称   |     大写    |    code  |    小写   |   code   |
@@ -359,6 +362,9 @@ $\left. \frac{du}{dx} \right| _{x=0}$
 |左映射延伸箭头|\xmapsto|$\xmapsto{abc}$|&#36; \xmapsto{abc} &#36;||
 |左右等长延伸箭头|\xlongequal|$\xlongequal{abc}$|&#36; \xlongequal{abc} &#36;||
 
+> [!WARNING]  
+> Github 对箭头的支持不完善
+
 ## 代数
 
 ### 四则运算
@@ -454,6 +460,9 @@ P(x|Pa_x)=\begin{cases}
 \end{cases} \tag{9}
 $$
 ```
+
+> [!WARNING]  
+> Github 对分段函数的支持不完善
 
 ### 无穷大
 
